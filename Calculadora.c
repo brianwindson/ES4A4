@@ -4,6 +4,11 @@
 
 int num1, num2;
 
+void Soma(){
+    
+}
+
+
 int main(){
     int opc;
 
@@ -19,17 +24,23 @@ int main(){
 			scanf("%d", &opc);
 			switch (opc){
                 case 1:
+                    Soma();
                     break;
+
                 case 2:
+                    Sub();
                     break;
 
                 case 3:
+                    Multi();
                     break;
                 
                 case 4:
+                    Divi();
                     break;
 
                 case 5:
+                    Rando();
                     break;
 
             }
