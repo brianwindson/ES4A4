@@ -10,18 +10,33 @@ void Soma(){
     printf("RESULTADO DA SOMA: %d", num1 + num2);
 }
 
+void Subtracao(){
+    printf("Insira o primeiro numero da  subtra��o (minuendo):\n");
+    scanf("%d",&num1);
+    printf("Insira o  numero subtra�do(subtraendo): ");
+    scanf("%d",&num2);
+    printf("Resultado da subtra��o:",num1+num2);
+}
+
+void Multiplicacao(){
+    printf("Insira o  numero multiplicador:");
+    scanf("%d",&num1);
+    printf("Insira o numero multiplicando:");
+    scanf("%d",&num2);
+    printf("Resultado da multiplicacao:",num1*num2);
+}
+
 void Divi(){
     printf("Insira o numero dividendo: ");
     scanf("%d", &num1);
     printf("\nInsira o numero divisor: ");
     scanf("%d", &num2);
     printf("RESULTADO DA DIVISAO: %d", num1 / num2);
-    
-    
 }
-
 int main(){
+    //int i;
     int opc;
+
 
     do{
         	printf("\n\n OPCOES: \n");
@@ -29,8 +44,7 @@ int main(){
 			printf("\n 2 - Subtracao ");
 			printf("\n 3 - Multiplicacao ");
 			printf("\n 4 - Divisao  ");
-            printf("\n 5 - Operacao aleatoria ");
-            printf("\n 6 - Sair");
+            printf("\n 5 - Sair ");
 			printf("\n opcao desejada: ");
 			scanf("%d", &opc);
 			switch (opc){
@@ -39,22 +53,19 @@ int main(){
                     break;
 
                 case 2:
-                   // Sub();
+                    Subtracao();
                     break;
 
                 case 3:
-                //    Multi();
+                    Multiplicacao();
                     break;
-                
+
                 case 4:
                     Divi();
                     break;
-
-                case 5:
-                //    Rando();
-                    break;
-
             }
     }
-    while ( opc != 6);
+    while ( opc != 5);
+    system("pause");
+    return 0;
 }
