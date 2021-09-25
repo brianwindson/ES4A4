@@ -3,9 +3,9 @@
 int num1, num2;
 
 void Soma(){
-    printf("Insira o primeiro numero a ser somado: ");
+    printf("Insira o primeiro numero a ser somado:");
     scanf("%d", &num1);
-    printf("\nInsira o segundo numero a ser somado: ");
+    printf("\nInsira o segundo numero a ser somado:");
     scanf("%d", &num2);
     printf("RESULTADO DA SOMA: %d", num1 + num2);
 }
@@ -13,7 +13,7 @@ void Soma(){
 void Subtracao(){
     printf("Insira o primeiro numero da  subtra��o (minuendo):\n");
     scanf("%d",&num1);
-    printf("Insira o  numero subtra�do(subtraendo): ");
+    printf("Insira o  numero subtra�do(subtraendo):");
     scanf("%d",&num2);
     printf("Resultado da subtra��o:",num1+num2);
 }
@@ -27,9 +27,9 @@ void Multiplicacao(){
 }
 
 void Divi(){
-    printf("Insira o numero dividendo: ");
+    printf("Insira o numero dividendo:");
     scanf("%d", &num1);
-    printf("\nInsira o numero divisor: ");
+    printf("\nInsira o numero divisor:");
     scanf("%d", &num2);
     printf("RESULTADO DA DIVISAO: %d", num1 / num2);
 }
@@ -40,12 +40,12 @@ int main(){
 
     do{
         	printf("\n\n OPCOES: \n");
-			printf("\n 1 - Soma  ");
-			printf("\n 2 - Subtracao ");
-			printf("\n 3 - Multiplicacao ");
+			printf("\n 1 - Soma");
+			printf("\n 2 - Subtracao");
+			printf("\n 3 - Multiplicacao");
 			printf("\n 4 - Divisao  ");
             printf("\n 5 - Sair ");
-			printf("\n opcao desejada: ");
+			printf("\n opcao desejada:");
 			scanf("%d", &opc);
 			switch (opc){
                 case 1:
